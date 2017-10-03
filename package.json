@@ -1,0 +1,16 @@
+{
+  "name": "graphql-gcloud",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Muriel Silveira <murielkong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.6",
+    "nodemon": "^1.12.1"
+  }
+}
