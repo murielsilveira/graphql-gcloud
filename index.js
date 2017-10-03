@@ -25,6 +25,6 @@ app.get('/', (req, res) => {
   res.send('Hello')
 })
 
-app.listen(3002, () => {
-  console.log('Server running on http://127.0.0.1:3002/')
+app.listen(8080, () => {
+  console.log('Server running on http://127.0.0.1:8080/')
 })
