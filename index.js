@@ -1,20 +1,8 @@
 const express = require('express')
 const graphqlHTTP = require('express-graphql')
-const { buildSchema } = require('graphql')
-
-const schema = buildSchema(`
-  type Query {
-    hello: String
-  }
-`)
-
-const root = {
-  hello: () => {
-    return 'Hello'
-  }
-}
-
+const { schema, root } = require('./schema')
 const app = express()
+
 app.use('/graphql', graphqlHTTP({
   schema,
   rootValue: root,
