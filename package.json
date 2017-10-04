@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "express": "^4.16.1",
@@ -16,5 +18,8 @@
   },
   "engines": {
     "node": "8.x"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
   }
 }
