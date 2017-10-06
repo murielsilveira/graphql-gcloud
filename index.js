@@ -10,7 +10,7 @@ app.use('/graphql', graphqlHTTP({
 }))
 
 app.get('/', (req, res) => {
-  res.send('Hello')
+  res.send('Hello!')
 })
 
 app.listen(8080, () => {
