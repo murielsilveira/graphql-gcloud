@@ -1,0 +1,14 @@
+[
+  {
+    "context": {
+      "git": {
+        "revisionId": "a9d84ccee7a0846e9c88776d960fb4e2d06d6bbb", 
+        "url": "git@github.com:murielsilveira/graphql-gcloud.git"
+      }
+    }, 
+    "labels": {
+      "category": "remote_repo", 
+      "remote_name": "origin"
+    }
+  }
+]
