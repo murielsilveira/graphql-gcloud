@@ -11,6 +11,9 @@ deploy:
   provider: gae
   keyfile: client-secret.json
   project: graphql-gcloud
+  on:
+    branch: master
+    node: "8"
 before_install:
   - openssl aes-256-cbc -K $encrypted_cbefc5f7282e_key -iv $encrypted_cbefc5f7282e_iv
     -in client-secret.json.enc -out client-secret.json -d
