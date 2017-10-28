@@ -1,6 +1,7 @@
 const express = require('express')
 const graphqlHTTP = require('express-graphql')
 const { schema, root } = require('./schema')
+const api = require('./api')
 const app = express()
 
 app.use('/graphql', graphqlHTTP({
@@ -8,6 +9,8 @@ app.use('/graphql', graphqlHTTP({
   rootValue: root,
   graphiql: true,
 }))
+
+app.use('/api', api)
 
 app.get('/', (req, res) => {
   res.send('Hello!')
